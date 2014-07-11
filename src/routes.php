@@ -1,10 +1,10 @@
 <?php
 
-Route::get('/test', function(){
+Route::get('/wxcheck', function(){
     Weixin::getInstance()->valid();
 });
 
-Route::get('/menu', function(){
+Route::get('/wxmenu', function(){
     $menu = Weixin::getInstance()->getMenu();
     var_dump($menu);
 });
